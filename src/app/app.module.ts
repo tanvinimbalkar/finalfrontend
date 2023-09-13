@@ -1,6 +1,6 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
@@ -18,7 +18,10 @@ import { AdminGetEnrollmentsComponent } from './components/admin-get-enrollments
 import { AdminViewPaymentsComponent } from './components/admin-view-payments/admin-view-payments.component';
 import { AdminClaimApprovalComponent } from './components/admin-claim-approval/admin-claim-approval.component';
 import { AdminSendReminderComponent } from './components/admin-send-reminder/admin-send-reminder.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { UserMyEnrollmentsComponent } from './components/user-my-enrollments/user-my-enrollments.component';
+import { UserEnrollmentsAfterpaymentComponent } from './components/user-enrollments-afterpayment/user-enrollments-afterpayment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,11 +39,19 @@ import { AdminSendReminderComponent } from './components/admin-send-reminder/adm
     AdminGetEnrollmentsComponent,
     AdminViewPaymentsComponent,
     AdminClaimApprovalComponent,
-    AdminSendReminderComponent
+    AdminSendReminderComponent,
+    UserMyEnrollmentsComponent,
+    UserEnrollmentsAfterpaymentComponent,
+    // DisplayPolicyComponent,
+    
   ],
   imports: [
+    FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,55 @@
+.address-input {
+    height: 80px; 
+
+  }
+
+ 
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+h2{
+  text-align: center;
+  margin-top: 20px; 
+}
+
+
+.card {
+  background-color: lightcyan;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
